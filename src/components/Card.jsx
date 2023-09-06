@@ -1,14 +1,14 @@
 import React from "react";
 
-function Card (){
+function Card (props){
     return(
         <div>
-           <img className="katie-zaferes" src="/src/assets/co6b04fddb994e5cfa3418c29/images/katie-zaferes.png" alt="katie-zaferes"/> 
+           <img className={props.coverImg} src={`../public/assets/${props.coverImg}`} alt={props.coverImg}/> 
            <p className="tag">SOLD OUT</p>
-           <img src="src/assets/co6b04fddb994e5cfa3418c29/images/star.png"/>
-           <small>5.0 (0).USA</small>
-           <p>Life lessons with Katie Zaferes</p>
-           <b>From $136 / person</b>
+           <img src="../public/assets/star.png"/>
+           <small>{props.rating} ({props.openSpots}).{props.location}</small>
+           <p>{props.title}</p>
+           <b>From ${props.price} / person</b>
         </div>
     )
 }
