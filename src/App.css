@@ -1,65 +1,86 @@
-.body {
+* {
   box-sizing: border-box;
 }
-.airbnb---logo {
-  width: 82px;
-  height: 25.35px;
-  margin-left: 10px;
-  margin-top: 20px;
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
-.navbar {
-  width: 550px;
+nav {
   height: 70px;
-  background-color: #FFFFFF;
-  box-shadow: 0px 2.9825618267059326px 7.456404209136963px 0px #0000001A;
+  display: flex;
+  padding: 20px 36px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
 }
 
-.hero {
+.bold {
+  font-weight: bold;
+}
+
+.gray {
+  color: #918E9B;
+}
+
+.nav--logo {
+  max-width: 100px;
+}
+
+section {
   padding: 20px;
 }
 
-.photo---grid {
-  max-width: 395px;
-  height: 232 px;
-  /* margin-top: 96px;
-  margin-bottom: 77px; */
-  border-radius: 8.949999809265137px;
+.hero {
+  display: flex;
+  flex-direction: column;
 }
 
-h3 {
-  width: 347px;
-  height: 40px;
-  top: 360px;
-  left: 36px;
-  font-family: Poppins;
-  font-size: 36px;
-  font-weight: 600;
-  line-height: 40px;
-  letter-spacing: 0em;
-  text-align: left;
-
+.hero--photo {
+  max-width: 400px;
+  align-self: center;
 }
 
-p {
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 18px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #222222;
-  width: 320px;
-  height: 56px;
-  top: 416px;
-  left: 36px;
-
+.hero-header {
+  margin-bottom: 16px;
 }
 
-.katie-zaferes {
-  position: relative;
+.hero--text {
+  margin-top: 0;
 }
 
-.tag {
-  position: absolute;
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
+.card {
+  width: 175px;
+  font-size: 12px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.card--image {
+  width: 100%;
+  border-radius: 9px;
+}
+
+.card--title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card--stats {
+  display: flex;
+  align-items: center;
+}
+
+.card--star {
+  height: 14px;
+}
+
+.card--price {
+  margin-top: auto;
 }

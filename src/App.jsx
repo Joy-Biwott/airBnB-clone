@@ -21,7 +21,9 @@ function App() {
     <>
      <NavBar />
      <Intro />
-     {cardData}
+     <section className='cards-list'>
+       {cardData}
+     </section>
     </>
   )
 }
